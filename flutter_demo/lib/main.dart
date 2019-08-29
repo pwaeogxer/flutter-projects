@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.red
+        primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Suicide 20020'),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -92,30 +92,20 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-            'Hello hell!',
-            textAlign: TextAlign.center,
-          ),
-            //Text(
-            //  'You have pushed the button this many times:',
-            //),
+              'You have pushed the button this many times:',
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
-            IconButton(
-              icon: Icon(Icons.smoking_rooms),
-              tooltip: 'Increment',
-              onPressed: _incrementCounter,
-              color: Color.fromARGB(255, 255, 0, 0),
-            )
           ],
         ),
       ),
-      /*floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.*/
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
